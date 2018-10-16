@@ -1,2 +1,1 @@
-# kingserch.github.io
-个人博客
+[https://kingserch.github.io](https://kingserch.github.io)
