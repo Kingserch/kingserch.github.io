@@ -62,8 +62,9 @@ public class PlayerTask {
 }
 ```
 
-
+![](/images/posts/interesting/rose/index.html)
 - - - 
 从伟大到可笑，相差只有一步。
+
 
 -- 《人间喜剧》
