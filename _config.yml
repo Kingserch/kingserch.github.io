@@ -35,7 +35,7 @@ ga:
 #
 #
 #  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
+#  帮忙star一下，感谢~😆 地址： https://github.com/Kingserch/kingserch.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
@@ -56,7 +56,7 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 首页, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}      
     - {title: 关于我, description: about, url: '/about'}      
     
