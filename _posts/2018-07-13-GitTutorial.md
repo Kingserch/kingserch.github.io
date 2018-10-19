@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git教程"
-date: 2016-07-13   
+date: 2018-07-13   
 tag: 工具 
 ---
 
@@ -65,7 +65,6 @@ git branc 查看时如出现
 代表现在已经进入一个临时的HEAD，可以使用 `git checkout -b temp` 创建一个 temp branch，这样临时HEAD上修改的东西就不会被丢掉了。
 然后切换到 dev 分支上，在使用 git branch merge temp，就可以把 temp 分支上的代码合并到 dev 上了。
 
-<br>
 
-转载请注明：[潘柏信的博客](http://baixin) » [点击阅读原文](http://baixin.io/2016/07/GitTutorial/)     
+   
 
