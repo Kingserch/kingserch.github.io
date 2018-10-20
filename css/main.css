@@ -444,8 +444,8 @@ img::-moz-selection {
   }
 
   .post-meta__date span {
-    margin: 0px;
-    /*margin-right: .5em; */
+    /*margin: 0px;*/
+    margin-right: .5em; 
   }
 
 /*  .post-meta__tags {
