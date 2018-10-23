@@ -1,44 +1,38 @@
-# 亮亮
 
-[亮亮](https://github.com/Kingserch/kingserch.github.io) 是一个简洁的博客模板，如果你也喜欢请 Star ，你的 Star 是我持续更新的动力, 谢谢 😄.
+## 使用方法
 
+1. 安装Node.js环境：https://nodejs.org/
 
-### 使用条件
+2. 安装git: https://git-scm.com/
 
-Jekyll 支持 Mac 、Windows、ubuntu 、Linux 操作系统                     
-Jekyll 需要依赖：Ruby、bundler
+3. 执行以下命令：
 
-#### 安装Jekyll
+``` bash
+git clone https://github.com/sitexa/anires.git
+cd anires
+npm install
+npm run dev
+```
 
-[Jekyll中文官方文档](http://jekyll.bootcss.com/) ， 如果你已经安装过了 Jekyll，可以忽略此处。
+## 部署方法
 
-> $ gem install jekyll
+1. 编辑 config/index.js，修改第 10 行的 assetsPublicPath，值为 `项目名/public`。如果你没有修改项目名 anires，则可跳过此步骤。
 
-#### 获取博客模板
+2. 编译、上传
+    
+``` 
+bash
+npm run build
+git add .
+git commit -m "update"
+git push
+```
 
-> $ git clone https://github.com/Kingserch/kingserch.github.io.git
- 
+3. 开启 GitHub Pages 功能, 或者，把生成的目标文件```public/*```放在你的web服务器上。
 
-进kingserch.github.io/ 目录下， 开启本地服务 
+4.如果出错 UNABLE_TO_VERIFY_LEAF_SIGNATURE 
+请执行npm config set strict-ssl false
 
-> $ jekyll server
+用完之后恢复：
 
-在浏览器输入 [127.0.0.1:4000](127.0.0.1:4000) ， 就可以看到博客效果了。
-
-### 提示
-
->* 如果你想使用我的模板，请把 _posts/ 目录下的文章都去掉。
->* 修改 _config.yml 文件里面的内容为你自己的个人信息。
-
-如果在部署博客的时候发现问题，可以直接在[Issues](https://github.com/Kingserch/kingserch.github.io/issues)里面提问。        
-
-
-如果你只想要我博客里的头像效果，你只需要拿 Kingserch/kingserch.github.io/_includes/side-panel.html 文件里面 `头像效果` 和 kingserch.github.io/css/main.css 里面最后面 `头像效果` 部分就行了。
-
-
-#### 感谢   
-
-本博客在[Vno Jekyll](https://github.com/onevcat/vno-jekyll)基础上修改的。 
-
-#### 后记 
-为了铭记一次电影，copy了一份博客的样式，在进行了简单的修改，也有基于jsp,servlet,mysql,bootstrap,html/css/js,ajax,json，但是jsp注定要被Vue替代，，，
+npm config set strict-ssl true
