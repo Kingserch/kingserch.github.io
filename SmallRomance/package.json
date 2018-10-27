@@ -1,7 +1,7 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "animation made by canvas, \r open index.html to view the project,\r or visit [this website](https://newnewking.github.io/MerryChristmas/)",
+  "description": "animation made by canvas, \r open index.html to view the project,\r or visit [this website](https://kingserch.github.io/MerryChristmas/)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NewNewKing/MerryChristmas.git"
+    "url": "git+https://github.com/Kingserch/kingserch.github.io.git"
   },
-  "author": "wangxingxin",
+  "author": "qinzhongliang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NewNewKing/MerryChristmas/issues"
+    "url": "https://github.com/Kingserch/kingserch.github.io/issues"
   },
-  "homepage": "https://github.com/NewNewKing/MerryChristmas#readme",
+  "homepage": "https://github.com/Kingserch/kingserch.github.io/SmallRomance#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
