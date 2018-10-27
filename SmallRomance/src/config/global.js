@@ -55,14 +55,18 @@ const config = (function(){
 		},
 		// type对应上面的color与font  若没有对应的 则默认为color1或font1
 		dialogue:[
-			{type:6, name:'亮亮', txt:'内心独白！'},
-			{type:2, name:'you', txt:'木头，有话快说，，，'},
-			{type:2, name:'you', txt:'磨磨唧唧。。。'},
-			{type:6, name:'亮亮', txt:'你上次为啥打我一拳哦。。。。'},
-			{type:6, name:'亮亮', txt:'你晓得不，一拳锤进来心里。。。'},
-			{type:6, name:'亮亮', txt:'然后我的内心就被你点燃了。。'},
-			{type:2, name:'you', txt:'。。。'},
-			{type:6, name:'亮亮', txt:'天快黑了，让我为你点燃整片天空吧。'},
+			{type:6, name:'男子', txt:'快过年了，我们去放烟花吧！'},
+			{type:2, name:'女子', txt:'天还这么亮，现在放烟花也不好看。'},
+			{type:2, name:'女子', txt:'再说你那有烟花吗？'},
+			{type:6, name:'男子', txt:'我当然有烟花啦。'},
+			{type:6, name:'男子', txt:'你那有打火机吗？'},
+			{type:2, name:'女子', txt:'没有呀～'},
+			{type:6, name:'男子', txt:'那你是怎么点燃我的心的？'},
+			{type:2, name:'女子', txt:'。。。'},
+			{type:2, name:'女子', txt:'可是我的心还没有被你点燃呀。'},
+			{type:6, name:'男子', txt:'别慌，我去买个打火机先。'},
+			{type:2, name:'女子', txt:'打火机可点不燃我的心。'},
+			{type:6, name:'男子', txt:'天快黑了，我要为你点燃整片天空。'},
 
 		],
 		// 阶段二
@@ -84,7 +88,7 @@ const config = (function(){
 			wait: undefined,  //消失后 => 炸裂  等待时间
 			color: undefined,  //烟花颜色
 		},
-		fireWords:'你的眼睛|很好看|里面有|日月冬夏|世间万物|但是|我的眼睛|更好看|因为|里面有你',  // '|' 为分隔符
+		fireWords:'你的眼睛|真好看|里面有|日月冬夏|晴雨山川|但是|我的眼睛|更好看|因为|里面有你',  // '|' 为分隔符
 		// hue:210 lightness 0
 		skyColor:'hsla({hue}, 60%, {lightness}%, 0.2)',	
 		fireOpt: {
@@ -101,7 +105,7 @@ const config = (function(){
 
 	
 		//阶段四
-		titleWords:'一不小心|一记拳头|心就被你俘获', // '|' 为分隔符
+		titleWords:'一不小心|就和你|到了白头', // '|' 为分隔符
 		titleOpt:{
 			gap: 4,
 			size: 70,  //最后字的大小
