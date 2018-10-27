@@ -1,7 +1,7 @@
 # 亮亮
 
 [亮亮](https://github.com/Kingserch/kingserch.github.io) 是一个简洁的博客模板，如果你也喜欢请 Star ，你的 Star 是我持续更新的动力, 谢谢 😄.
-
+[个人简历](https://kingserch.github.io/qzl/public)
 
 ### 使用条件
 
