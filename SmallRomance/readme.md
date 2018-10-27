@@ -46,28 +46,10 @@ npm run build
 
 参数说明相见global.js注释
 
-### 效果初级教程
+### 部署出错；
+ERR!code UNABLE_TO_VERIFY_LEAF_SIGNATURE
 
-[烟花效果](https://github.com/NewNewKing/SmallRomance/issues/2);
+###解决办法;
+In your command line run:
 
-[文字粒子效果](https://github.com/NewNewKing/SmallRomance/issues/3);
-
-
-### 参考项目
-
-**在canvas中使用粒子组成文字**
-
-偶然发现的github上的一个项目 --- **shape-shifter**
-
-[https://github.com/kennethcachia/shape-shifter](https://github.com/kennethcachia/shape-shifter)
-
-**烟花效果**
-
-参考了[codepen.io](https://codepen.io/search/pens?q=fireworks&limit=all&type=type-pens)上的很多作品。
-
-主要参考 --- **fireworks seen in the countryside**
-
-[fireworks seen in the countryside](https://codepen.io/K-T/pen/NjyNQy?q=fireworks&limit=all&type=type-pens)
-
----
-**licensed under MIT LISENCE**
+npm config set strict-ssl false
