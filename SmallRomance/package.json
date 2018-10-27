@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Kingserch/kingserch.github.io/issues"
   },
-  "homepage": "https://github.com/Kingserch/kingserch.github.io/SmallRomance#readme",
+  "homepage": "https://github.com/Kingserch/kingserch.github.io/blob/master/SmallRomance#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
