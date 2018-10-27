@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kingserch/kingserch.github.io.git"
+    "url": "git+https://github.com/Kingserch/kingserch.github.io/tree/master/SmallRomance"
   },
   "author": "qinzhongliang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kingserch/kingserch.github.io/issues"
   },
-  "homepage": "https://github.com/Kingserch/kingserch.github.io/blob/master/SmallRomance#readme",
+  "homepage": "https://github.com/Kingserch/kingserch.github.io/tree/master/SmallRomance",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
