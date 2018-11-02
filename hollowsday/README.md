@@ -7,8 +7,24 @@
 ``` bash
 # install dependencies
 npm install
+出错：
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! chromedriver@2.43.1 install: `node install.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the chromedriver@2.43.1 install script.
+npm ERR! This is probably not a problem with npm. There is likely additional log
+ging output above.
 
-# serve with hot reload at localhost:8080
+npm ERR! A complete log of this run can be found in:
+npm ERR!     
+C:\Users\Administrator\AppData\Roaming\npm-cache\_logs\2018-11-02T1
+1_19_59_302Z-debug.log
+
+解决npm install appium-chromedriver@3.0.1 --ignore-scripts或者npm install appium-chromedriver --chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
+
+
 npm run dev
 
 # build for production with minification
