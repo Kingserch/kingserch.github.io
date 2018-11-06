@@ -1,9 +1,10 @@
 <template>
-	<div class="home">
+	<div id="home" class="home">
+		<canvas-part :boxId = "canvasId"></canvas-part>
 		<form>
 			<dl>
 				<dd>
-					<input type="text" v-model="username" placeholder="请输入你的用户名">
+					<input type="text" v-model="username" placeholder="请输入你的名字">
 				</dd>
 			</dl>
 			<div class="btnBox">
@@ -11,27 +12,24 @@
 			</div>
 		</form>
 		<dialog-bar v-model="sendVal" type="danger" :title="maskTitle"  :content="maskContent"  v-on:cancel="clickCancel()" @danger="clickDanger()" @confirm="clickConfirm()" dangerText="Delete"></dialog-bar>
+		<hallow-footer></hallow-footer>
 	</div>
 </template>
 <style lang="scss" scoped="" type="text/css">
 	.home{
 		width:100%;
 		height:100%;
-		padding-bottom:200px;
-		display: -webkit-box;
-	    -webkit-box-align: center;
-	    -webkit-box-pack: center;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-		background-color:rgba(51,51,51,.1);
-		z-index:9;
 		& > form{
 			width:100%;
-		    padding: 0 20%;
+			padding-top:200px;
+			margin:auto;
+			position: relative;
+			z-index:10;
+		    min-width: 320px;
+			max-width: 768px;
 			dl{
 				width:100%;
-				padding-bottom: 50px;
+				padding:0 20% 50px;
 				dd{
 					width:100%;
 					padding:20px 20px 20px 100px;
@@ -87,12 +85,55 @@
 				    border-radius: 5px;
 				}
 			}
+			&:after{
+				content: "";
+				width: 130px;
+				height: 130px;
+				display: inline-block;
+				background: url(https://raw.githubusercontent.com/wangqian0609/hallowsday/master/src/assets/hallow-s.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+				right: -65px;
+				animation: hallow-s-slide 10s infinite ease-in-out;
+				-webkit-animation: hallow-s-slide 10s infinite ease-in-out;
+			}
 		}
-
+	}
+	@keyframes hallow-s-slide{
+		0%{
+		    transform: translateY(0);
+		    -webkit-transform: translateY(0);
+		}
+		50%{
+		    transform: translateY(230px);
+		    -webkit-transform: translateY(230px);
+		}
+		100%{
+		    transform: translateY(0%);
+		    -webkit-transform: translateY(0%);
+		}
+	}
+	@-webkit-keyframes hallow-s-slide{
+		0%{
+		    transform: translateY(0);
+		    -webkit-transform: translateY(0);
+		}
+		50%{
+		    transform: translateY(230px);
+		    -webkit-transform: translateY(230px);
+		}
+		100%{
+		    transform: translateY(0%);
+		    -webkit-transform: translateY(0%);
+		}
 	}
 </style>
 <script type="text/javascript">
 	import dialogBar from '../components/dialog'
+	import footer from '../components/footer'
+	import canvas from '../components/stars'
 
 	export default{
 		props:{
@@ -108,10 +149,13 @@
 				sendVal:false,
 				maskTitle:'',
 				maskContent:'',
+				canvasId:'home'
 			}
 		},
 		components:{
 			'dialog-bar':dialogBar,
+			'hallow-footer':footer,
+			'canvas-part':canvas,
 		},
 		methods:{
 			openMask(index){

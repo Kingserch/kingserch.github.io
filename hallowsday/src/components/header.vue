@@ -7,6 +7,9 @@
 <style lang="scss" type="text/css">
 	.nav{
 		width:100%;
+		// min-width: 320px;
+	 //    max-width: 768px;
+	    margin: auto;
 		height:88px;
 		line-height:88px;
 		padding:0 100px;
