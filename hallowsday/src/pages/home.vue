@@ -6,7 +6,7 @@
 			<div class="infos">
 				<div v-show="noteShow" class="ShowNotes" @click="openNotice">这是一份祝福</div>
 				<div v-show="!noteShow" class="Notes">
-					<label>{{userName}}，欢迎你打开这个页面。</label>
+					<label>{{userName}}，欢迎你...</label>
 				</div>
 			</div>
 			<div class="menus" v-show="!noteShow">
@@ -176,7 +176,7 @@
 		},
 		data(){
 			return{
-				lists:['卖红色衣服的女人','卖红色衣服的女人','卖红色衣服的女人','卖红色衣服的女人'],
+				lists:['咿呀咿呀哟','咿呀咿呀哟','咿呀咿呀哟','咿呀咿呀哟'],
 				userName:this.$route.params.user,
 				storyName:'',
 				Htitle:'',
