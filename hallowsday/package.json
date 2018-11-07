@@ -2,7 +2,7 @@
   "name": "hallowsday",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "wangqian0609 <954919352@qq.com>",
+  "author": "king0927 <838915764@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
