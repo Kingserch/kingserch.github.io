@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta http-equiv="refresh" content="0; url=https://www.sitexa.org/hallowsday/dist/" />
+  <title>hallowsday</title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      width: 100%;
+      min-width:1024px;
+      height: 100%;
+      display: inline-block;
+    }
+    body{
+      background:-webkit-linear-gradient(#07030e,#5e2a0b);
+      background:linear-gradient(#07030e,#5e2a0b);
+    }
+    ul,li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      outline: none;
+    }
+    img{
+      vertical-align: middle;
+    }
+    input{
+      outline: none;
+    }
+    #app{
+      width: 100%;
+      height: 100%;
+      position:relative;
+      margin:auto;
+      font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      /*z-index: 9;*/
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <transition :name="transitionName">
+    <router-view></router-view>
+  </transition>
+</div>
+<!-- built files will be auto injected -->
+<script type="text/javascript">
+  (function(){
+    //禁滚轮
+    function disableMouseWheel(){
+      if(document.addEventListener){
+        document.addEventListener('DOMMouseScroll',scrollFunc,false);
+      }
+      window.onmousewheel = document.onmousewheel = scrollFunc;
+    }
+    function scrollFunc(evt){
+      evt = evt || window.event;
+      if(evt.preventDefault){
+        evt.preventDefault();
+        evt.stopPropagation();
+      }
+      else{
+        evt.cancelBubble = true;
+        evt.returnValue = false;
+      }
+      return false;
+    }
+    disableMouseWheel();
+  })()
+</script>
+</body>
+</html>
