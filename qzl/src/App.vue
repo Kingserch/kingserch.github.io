@@ -30,16 +30,15 @@
         enableHtml: false,
         fullStyle: [
           `/*
-* Inspired by http://strml.net/
 * 大家好，我是亮亮。
-* 我来写一份简历！
+* 我来说俩句大白话！
 */
 
-/* 给所有元素加上过渡效果 */
+/* go */
 * {
   transition: all .1s;
 }
-/* 设置背景颜色 */
+/* 生活充满色彩，程序也应该有色彩 */
 html {
   color: rgb(222,222,222); background: rgb(0,64,64);
 }
@@ -52,7 +51,7 @@ html {
   margin:0;
 }
 
-/* 设置边框 */
+/* 无规则，不方圆 */
 .styleEditor {
   padding: .5em;
   border: 1px solid;
@@ -61,13 +60,13 @@ html {
   width: 50vw; height: 70vh;
   background: rgb(20,20,20);
 }
-/* 代码高亮 */
+/* 蹦的太高，摔得越重 */
 .token.selector{ color: rgb(130,150,0); }
 .token.property{ color: rgb(190,140,0); }
 .token.punctuation{ color: yellow; }
 .token.function{ color: rgb(40,160,150); }
 
-/* 加3D效果 */
+/* 呵呵 */
 html{
   perspective: 1000px;
 }
@@ -79,7 +78,7 @@ html{
           transform: rotateY(10deg) translateZ(-100px) ;
 }
 
-/* 准备一个编辑器 */
+/* 来一个黑板吧 */
 .resumeEditor{
   position: fixed; right: 0; top: 0;
   padding: .5em;  margin: .5em;
@@ -92,7 +91,7 @@ html{
   -webkit-transform: rotateY(-10deg) translateZ(-100px) ;
           transform: rotateY(-10deg) translateZ(-100px) ;
 }
-/* 开始写简历 */
+/* 大白话 */
 `, `
 /*将Markdown格式翻译成HTML
  *再对HTML加点样式
@@ -125,7 +124,7 @@ html{
   padding: .5em;
   background: #ddd;
 }
-`, `/* 写封感谢信。
+`, `/* 人要学会感恩，并懂得感恩。
  * 感谢大家对我的关注。
  */
 .styleEditor{
@@ -260,7 +259,7 @@ Linux运维初级工程师，了解Java开发
 写在最后
 ----
 
-* 所有的结局都已写好，所有的泪水都已启程，再见了。。。
+* 岁月，一晃，二十余载就这样匆匆别过，向前推进，推向成熟，推向衰老；往事，沉淀，那些娓娓道来的故事，淋碎了流浪在外的崩溃。往事里，瞥见我的旧时光，还有未曾淡去的父亲的严厉词喝。
 
   `
       }

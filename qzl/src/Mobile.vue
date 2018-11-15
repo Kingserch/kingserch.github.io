@@ -23,21 +23,20 @@
         enableHtml: false,
         fullStyle: [
           `/*
-* Inspired by http://strml.net/
 * 大家好，我是亮亮。
-* 我来写一份简历！
+* 我来说俩句大白话！
 */
 
-/* 给所有元素加上过渡效果 */
+/* go */
 * {
   transition: all .2s;
 }
-/* 设置背景颜色 */
+/* 生活充满色彩，程序也应该有色彩 */
 html {
   color: rgb(222,222,222);
   background: rgb(0,43,54);
 }
-/* 设置边框 */
+/* 无规则，不方圆 */
 .styleEditor {
   padding: .5em;
   border: 1px solid;
@@ -46,7 +45,7 @@ html {
   margin: 2.5vh 5vw;
   height: 90vh;
 }
-/* 太高了 */
+/* 蹦的太高，摔得越重 */
 .styleEditor {
   height: 45vh;
 }
@@ -64,7 +63,7 @@ html {
   color: rgb(42,161,152);
 }
 
-/* 加3D效果 */
+/* 呵呵 */
 html{
   perspective: 1000px;
 }
@@ -73,7 +72,7 @@ html{
   transform: rotateX(-10deg) translateZ(-50px) ;
 }
 
-/* 准备一个编辑器 */
+/* 来一个黑板吧 */
 .resumeEditor{
   position: fixed;
   top: 50%; left: 0;
@@ -83,7 +82,7 @@ html{
   background: white; color: #222;
   overflow: auto;
 }
-/* 开始写简历 */
+/* 大白话 */
 
 
 `,
@@ -187,10 +186,10 @@ Linux运维初级工程师，了解Java开发
 技术及语言
 ----
   - Java: Struts2, Spring, Hibernate,
-  - DB: SQLServer, Oracle, MySQL, redis, memcached
-  - WebServer: apache, nginx, tomcat, resion, 
+  - DB: SQLServer,  MySQL, redis, memcached
+  - WebServer: apache, nginx, tomcat, 
   - Linux: Ubuntu, CentOS,
-  - Others:  git, Xmind，
+  - Others:  git, 
 
 教育经历
 ----
@@ -201,7 +200,7 @@ Linux运维初级工程师，了解Java开发
 写在最后
 ----
 
-* 所有的结局都已写好，所有的泪水都已启程，再见了。。。
+* 岁月，一晃，二十余载就这样匆匆别过，向前推进，推向成熟，推向衰老；往事，沉淀，那些娓娓道来的故事，淋碎了流浪在外的崩溃。往事里，瞥见我的旧时光，还有未曾淡去的父亲的严厉词喝。
 
 
 `
