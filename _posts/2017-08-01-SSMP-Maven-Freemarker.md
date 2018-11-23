@@ -34,7 +34,7 @@ description: SSM框架——详细整合教程（Spring+SpringMVC+MyBatisPlus+Ma
 ### pom.xml :
 ```xml
     <build>
-        <finalName>liujilu</finalName>
+        <finalName>qzl</finalName>
         <plugins>
             <!--添加Tomcat7 maven 插件-->
             <plugin>
@@ -118,7 +118,7 @@ description: SSM框架——详细整合教程（Spring+SpringMVC+MyBatisPlus+Ma
 ### Spring.xml 
 ```xml
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.liujilu.service.*"/>
+    <context:component-scan base-package="com.qzl.service.*"/>
     <!-- 开启注解 -->
     <context:annotation-config/>
 
@@ -131,7 +131,7 @@ description: SSM框架——详细整合教程（Spring+SpringMVC+MyBatisPlus+Ma
 ### SpringMVC.xml
 ```xml
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器,不扫描Service，使用Spring中的Service -->
-    <context:component-scan base-package="com.liujilu.controller">
+    <context:component-scan base-package="com.qzl.controller">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
     <!-- 处理器映射器 -->
@@ -200,7 +200,7 @@ description: SSM框架——详细整合教程（Spring+SpringMVC+MyBatisPlus+Ma
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
          -->
          <!-- 配置包别名 -->
-        <property name="typeAliasesPackage" value="com.liujilu.model"/>
+        <property name="typeAliasesPackage" value="com.qzl.model"/>
         <property name="plugins">
             <array>
                 <!-- 分页插件配置 -->
@@ -408,7 +408,7 @@ public class MpGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/liujilu?characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/qzl?characterEncoding=utf8");
         mpg.setDataSource(dsc);
         
         // 策略配置
@@ -421,7 +421,7 @@ public class MpGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com");
-        pc.setModuleName("liujilu");
+        pc.setModuleName("qzl");
         pc.setEntity("model");
         mpg.setPackageInfo(pc);
         // 执行生成
