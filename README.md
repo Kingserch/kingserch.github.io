@@ -6,6 +6,8 @@
 
 [万圣节](https://kingserch.github.io/hallowsday)
 
+[友谊万岁](https://kingserch.github.io/line)
+
 ### 使用条件
 
 Jekyll 支持 Mac 、Windows、ubuntu 、Linux 操作系统                     
