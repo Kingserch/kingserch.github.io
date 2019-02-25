@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>list</title>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <div class="text"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+window.onload = function() {
+        function text(str) {
+        	var textDiv = document.getElementsByClassName("text")[0];
+        	var arr = str.replace(/\n/igm, '@').split('');
+        	var p = document.createElement('p');
+        	textDiv.appendChild(p);
+        	var index = 0;
+        	var timer = setInterval(function(){
+        		var t = '';
+        		if(arr[index]=='@'){
+        			t = document.createElement('br');
+        		}else{
+        			t = document.createTextNode(arr[index]);
+        		}
+        		
+        		p.appendChild(t);
+        		index++;
+        		if(index >= arr.length){
+        			timer = clearInterval(timer);
+        		}
+        	}, 100)
+
+        }
+        text("原来一切都是我自己给自己的错觉\n 太偏执，你拒绝的是那么鲜明，沉溺其中不能自拔的我都没发现，\n 借你的高枝炫耀自己；\n 我如果爱你—— \n绝不学痴情的鸟儿，\n 为绿荫重复单调的歌曲；\n 也不止像泉源，\n 常年送来清凉的慰藉；\n 也不止像险峰，\n \
+        	增加你的高度，\n 衬托你的威仪。 \n甚至日光，甚至春雨。\n 不， 这些都还不够！ \n我必须是你近旁的一株木棉， \n作为树的形象和你站在一起。\n 根， 紧握在地下；\n 叶， 相触在云里。\n 每一阵风过，\n\
+        	我们都互相致意， \n但没有人，\n 听懂我们的言语。\n 你有你的铜枝铁干，\n 像刀， 像剑， 也像戟；\n 我有我红硕的花朵，\n 像沉重的叹息， 又像英勇的火炬。\n 我们分担寒潮、 风雷、 霹雳；\n \
+        	我们共享雾霭、 流岚、 虹霓。 \n仿佛永远分离， \n  却又终身相依。\n 这才是伟大的爱情，\n 坚贞就在这里：\n 爱—— 不仅爱你伟岸的身躯，\n 也爱你坚持的位置，\n 足下的土地。\n ");
+        };
+
+</script>
